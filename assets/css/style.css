@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* debug */
+
+.debug * {
+    border: 1px dashed black;
+}
+
+.debug header {
+    height: 50px;
+    background-color: red;
+}
+
+
+.debug main {
+    height: 100%;
+
+}
+
+.debug .banner{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* debug */
+
+
+
+#box {
+    height: 100vh;
+    display: flex;
+}
+
+/* box */
+
+.left {
+    background-color:#10283D;
+    width: 20%;
+    height: 100%;
+}
+/* left */
+
+
+.container_fluid{
+    margin: 0 -13px;
+}
+.banner{
+    background-color: #1B72E8; 
+}
+
