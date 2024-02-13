@@ -1,61 +1,275 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Bootstrap-dashboard</title>
-</head>
+    <title>Hello world</title>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- Bootstrap CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
 
 <body class="debug">
 
-
-
-
     <header id="site_header">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <!-- Menu dropdown -->
 
 
-    </header>
-
-    <!-- header -->
-
-    <main>
-
-        <div id="box">
-            <div class="left">
-
-         
-
-
-            </div>
-            <div class="container-fluid container_fluid">
-                <div class="banner">
-
+                    </ul>
                 </div>
-               
-
+                <div>
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fa fa-bell text-warning" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <div id="wrapper" class="d-flex">
+        <div class="sidebar p-2 d-flex side_bar">
+            <i class="fa-solid fa-house p-2"><span class="m-2">Home</span></i>
+            <i class="fa-solid fa-chart-simple p-2"><span class="m-2">Stats</span></i>
+            <i class="fa-solid fa-signal p-2"><span class="m-2">Signal</span></i>
+            <i class="fa-solid fa-gear"></i>
+
         </div>
 
 
+        <main>
+            <div class="banner">
+                <ul class="nav justify-content-between mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white " aria-current="page" href="#"> <span
+                                class="font_">Boolean</span> <span class="border">Piano blaze</span><br>
+                            <span class="border">3 app</span><span>>></span><span class="d_none border">Boolean mobile
+                                app</span><span class="d_none border">Boolean mobile app</span>
+                            <span class="d_none border">Boolean blog app</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Studenti negli ultimi 30 minuti <br>
+                            <span>125</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nuovo studente
+
+                            <button class="btn text-warning" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#add_students" aria-controls="add_students">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+
+                        <ul class="list-group" style="border: 1px solid gray; margin: 0 1rem;">
+                            <li class="list-group-item d-flex align-items-center" style="background-color:#F7F7F7
+        ; font-size: x-large; height: 70px;">Prossime Classi</li>
+
+                            <li class="list-group-item d-flex">
+                                <div class="box d-flex">
+                                    Nome
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav>Data inizio</nav>
+                                    <nav>ROI</nav>
+                                    <nav> Stato</nav>
+                                    <nav>Azioni</nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 75
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">15 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="done">done</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 76
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">16 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="done">done</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 77
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">17 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="process">process</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 78
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">18 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="done">done</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 79
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">19 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="failed">failerd</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 80
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">20 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="done">done</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 81
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav class="">21 Febbraio 2021</nav>
+                                    <nav class="">20%</nav>
+                                    <nav class="failed">failed</nav>
+                                    <nav class="d-flex"> <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="d-flex box">
+
+                                    <img class="object-fit-contain" src="./assets/img/class-avatar.jpg" width="30px"
+                                        alt="" style="margin: 0 1rem;">
+                                    Classe 82
+                                </div>
+                                <div class="d-flex box1">
+                                    <nav>22 Febbraio 2021</nav>
+                                    <nav>20%</nav>
+                                    <nav class="done">done</nav>
+                                    <nav class="d-flex">
+
+                                        <i class="fa-solid fa-pen trash"></i>
+                                        <i class="fa-solid fa-trash trash"></i>
+
+
+                                    </nav>
+                                </div>
+                            </li>
 
 
 
 
 
-    </main>
 
 
 
 
+                        </ul>
+
+                    </div>
+                    <div class="col-12 col-xl-4">
 
 
 
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
+        crossorigin='anonymous'></script>
 
 </body>
 
