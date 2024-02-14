@@ -49,6 +49,8 @@ main {
     }
 }
 
+
+
 .notifications-container {
     width: 80%;
     height: 50px;
@@ -85,6 +87,14 @@ main {
 .notifications {
     padding: 5px;
 }
+/* search */
+@media screen and (max-width:760px){
+    .navbar-lg{
+        display: none;
+    }
+}
+
+/* navbar */
 
 
 @media screen and (min-width: 1200px) {
@@ -106,8 +116,8 @@ main {
 
 .bg_color{
     background-image: url(/assets/img/sidebar-bg.png);
-    background-color: #051E34
-    ;
+    background-color: #051E34;
+    
 }
 
 
@@ -196,6 +206,13 @@ main {
     display: flex;
 }
 
+@media screen and (max-width:650px ){
+    .D_none{
+        display: none;
+
+    }
+    
+}
 
 /* list */
 
@@ -211,13 +228,8 @@ main {
         font-size: xx-large;
         display: flex;
         align-items: center;
-    
-
-
 
     }
-
-
 }
-
+/* faq */
 
