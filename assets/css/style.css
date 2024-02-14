@@ -1,11 +1,12 @@
-* {
+/* * {
     border: 1px dashed;
-}
+} */
 
 body {
     height: 100vh;
     overflow: hidden;
 }
+
 main {
     overflow-y: scroll;
 }
@@ -14,7 +15,7 @@ main {
 .debug {
 
     & header {
-        background-color: palegoldenrod;
+    
         height: 70px;
     }
 
@@ -25,6 +26,7 @@ main {
 
 
 }
+
 /* debug */
 
 /* Header */
@@ -47,6 +49,22 @@ main {
             min-height: 100px;
         }
     }
+}
+
+@media screen and (max-width:760px) {
+    .navbar-lg {
+        display: none;
+    }
+    .img_none-lg{
+        display: none;
+    }
+}
+@media screen and (min-width:759px) {
+    .img_none-sm{
+        display: none;
+
+    }
+
 }
 
 
@@ -87,14 +105,11 @@ main {
 .notifications {
     padding: 5px;
 }
-/* search */
-@media screen and (max-width:760px){
-    .navbar-lg{
-        display: none;
-    }
-}
 
-/* navbar */
+/* search */
+
+
+
 
 
 @media screen and (min-width: 1200px) {
@@ -107,17 +122,17 @@ main {
         }
     }
 }
+/* navbar */
 
-/* side_bar */
 .side_bar {
     flex-direction: column;
     align-items: center;
 }
 
-.bg_color{
+.bg_color {
     background-image: url(/assets/img/sidebar-bg.png);
     background-color: #051E34;
-    
+
 }
 
 
@@ -129,6 +144,7 @@ main {
         display: none;
     }
 }
+
 /* side_bar */
 .font_ {
     font-size: xx-large;
@@ -206,22 +222,22 @@ main {
     display: flex;
 }
 
-@media screen and (max-width:650px ){
-    .D_none{
+@media screen and (max-width:650px) {
+    .D_none {
         display: none;
 
     }
-    
+
 }
 
 /* list */
 
-.faq_section{
+.faq_section {
     border: 1px solid grey;
     border-radius: 4px;
 
 
-    > .faq{
+    >.faq {
 
         background-color: #F7F7F7;
         height: 70px;
@@ -231,5 +247,35 @@ main {
 
     }
 }
+
 /* faq */
 
+
+
+.todo {
+    background-color: #F7F7F7;
+    height: 70px;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.Font_ {
+    font-size: x-small;
+}
+
+
+/* todo */
+
+
+.faq_section1 {
+    border: 1px solid grey;
+    border-bottom: none;
+}
+
+.faq_section2{
+    border: 1px solid green;
+}
+
+/* stats */
