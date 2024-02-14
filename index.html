@@ -18,24 +18,35 @@
 </head>
 
 <body class="debug">
-
     <header id="site_header">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""></a>
 
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <div class="collapse navbar-collapse" id="collapsibleNavId" style="background-color:#F7F7F7;">
+                    <div class="search" style="width: 80%;">
+                        <div class="container-search d-flex">
+                            <nav id="c-gray" class="m-left"><i class="fa-solid fa-magnifying-glass"></i></nav>
+                            <div class="w-100">
+                                <input type="text" placeholder="Cerca o inizia una nuova chat" style="width: 100%;">
+                            </div>
+                        </div>
+                        <!-- navbar -->
+
+
+                    </div>
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Home
+                            <a class="nav-link active" href="#" aria-current="page"><i class="fa-solid fa-list"></i>
                                 <span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         </li>
                         <!-- Menu dropdown -->
-
-
                     </ul>
                 </div>
                 <div>
@@ -55,16 +66,21 @@
             </div>
         </nav>
     </header>
+
     <div id="wrapper" class="d-flex">
-        <div class="sidebar p-2 d-flex side_bar">
+
+        <div class="sidebar p-2 d-flex side_bar bg_color text-white">
             <i class="fa-solid fa-house p-2"><span class="m-2">Home</span></i>
             <i class="fa-solid fa-chart-simple p-2"><span class="m-2">Stats</span></i>
             <i class="fa-solid fa-signal p-2"><span class="m-2">Signal</span></i>
-            <i class="fa-solid fa-gear"></i>
+            <div class="h-100 d-flex align-items-end">
+                <i class="fa-solid fa-gear"></i>
+            </div>
 
         </div>
+        <!-- sidebar -->
 
-
+        <!-- main -->
         <main>
             <div class="banner">
                 <ul class="nav justify-content-between mt-3">
@@ -93,13 +109,15 @@
 
 
             </div>
+            <!-- banner -->
+
+
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-xl-8">
-
                         <ul class="list-group" style="border: 1px solid gray; margin: 0 1rem;">
                             <li class="list-group-item d-flex align-items-center" style="background-color:#F7F7F7
-        ; font-size: x-large; height: 70px;">Prossime Classi</li>
+        ; font-size: xx-large; height: 70px;">Prossime Classi</li>
 
                             <li class="list-group-item d-flex">
                                 <div class="box d-flex">
@@ -254,13 +272,32 @@
 
 
                         </ul>
+                        <!-- list -->
 
+                        <ul class="list-group m-3 faq_section">
+                            <li class="list-group-item faq">F.A.Q.</li>
+                            <li class="list-group-item d-flex justify-content-between"><strong>Come aggiungere un nuovo
+                                    studente?</strong>
+                                <nav class="text-secondary">&#5167;</nav>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between"><strong>Come posso accedere alle
+                                    informazioni del mio account?</strong>
+                                <nav class="text-secondary">&#5167;</nav>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between"><strong>Posso usare questa
+                                    dashboard da mobile?</strong>
+                                <nav class="text-secondary">&#5167;</nav>
+                            </li>
+                        </ul>
+                        <!-- faq -->
                     </div>
+                    <!-- col-xl-8 -->
                     <div class="col-12 col-xl-4">
 
 
 
                     </div>
+                    <!-- col-xl-4 -->
                 </div>
             </div>
         </main>

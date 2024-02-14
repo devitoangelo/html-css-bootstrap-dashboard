@@ -6,7 +6,11 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+main {
+    overflow-y: scroll;
+}
 
+/* debug */
 .debug {
 
     & header {
@@ -16,10 +20,12 @@ body {
 
     & [class^="col-"] {
         min-height: 200px;
+        background-color: #F7F7F7;
     }
 
 
 }
+/* debug */
 
 /* Header */
 /* Wrapper */
@@ -43,6 +49,44 @@ body {
     }
 }
 
+.notifications-container {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    margin: auto;
+
+
+
+}
+
+
+.silent {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+
+
+
+}
+
+
+.notifications-messages {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.notifications {
+    padding: 5px;
+}
+
+
 @media screen and (min-width: 1200px) {
 
     #wrapper {
@@ -54,12 +98,16 @@ body {
     }
 }
 
-
+/* side_bar */
 .side_bar {
     flex-direction: column;
     align-items: center;
+}
 
-
+.bg_color{
+    background-image: url(/assets/img/sidebar-bg.png);
+    background-color: #051E34
+    ;
 }
 
 
@@ -71,7 +119,7 @@ body {
         display: none;
     }
 }
-
+/* side_bar */
 .font_ {
     font-size: xx-large;
 }
@@ -84,8 +132,11 @@ body {
     margin: 0 3px;
 }
 
+/* banner */
 
 
+
+/* col-xs-8 */
 .box {
     width: 60%;
     align-items: start;
@@ -146,6 +197,27 @@ body {
 }
 
 
-main {
-    overflow-y: scroll;
+/* list */
+
+.faq_section{
+    border: 1px solid grey;
+    border-radius: 4px;
+
+
+    > .faq{
+
+        background-color: #F7F7F7;
+        height: 70px;
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+    
+
+
+
+    }
+
+
 }
+
+
